@@ -1,6 +1,6 @@
 on a la structure principale et quelques résultats, en ayant appliqué les algos de cours. Pour voir ce qu'il reste à faire j'ai demandé à une i.a pour la suite :
 
-1. Nettoyage approfondi des données
+1. Nettoyage approfondi des données             POURQUOI PAS ------------------------------------------------------
 
 Même si votre dataset ne contient ni NA ni doublons, il manque :
 
@@ -12,7 +12,7 @@ Transformation log ou Box-Cox pour certaines variables
 
 Normalisation alternative selon les modèles
 
-2. Gestion du déséquilibre de la target
+2. Gestion du déséquilibre de la target                      POURQUOI PAS ------------------------------------------------------
 
 La distribution de la popularité est centrée mais pas uniforme :
 
@@ -24,7 +24,7 @@ binning de la popularité (pour classification alternative)
 
 pondération de la loss si nécessaire
 
-3. Feature Engineering
+3. Feature Engineering                         FAIT------------------------------------------------------
 
 Votre projet n’ajoute aucune nouvelle feature, or c’est une étape cruciale.
 
@@ -38,7 +38,7 @@ Création de nouvelles métriques (e.g. "danceability per loudness")
 
 PCA ou autres méthodes de réduction de dimension
 
-4. Analyse des performances sur le train et sur le test
+4. Analyse des performances sur le train et sur le test                  A FAIRE ------------------------------------------------------
 
 Le projet montre les scores uniquement sur le test.
 Il manque :
@@ -53,7 +53,7 @@ comparaison des erreurs train/test
 
 variance des folds en cross-validation
 
-5. Comparaison claire des modèles
+5. Comparaison claire des modèles                FAIT------------------------------------------------------
 
 Vous avez beaucoup de résultats mais pas :
 
@@ -63,7 +63,7 @@ Une interprétation globale du meilleur modèle et du pourquoi
 
 Un classement clair
 
-6. Analyse des features importantes
+6. Analyse des features importantes               FAIT------------------------------------------------------
 
 Pour un projet ML, il manque :
 
@@ -77,7 +77,7 @@ Explication des variables influentes (interprétabilité)
 
 C’est essentiel pour discuter des résultats.
 
-7. Validation croisée globale
+7. Validation croisée globale                       POURQUOI PAS------------------------------------------------------
 
 Vous utilisez GridSearchCV mais :
 
@@ -85,7 +85,7 @@ Pas de cross-validation globale pour tous les modèles
 
 Vous ne comparez pas les scores moyens de CV entre modèles
 
-8. Visualisation des performances
+8. Visualisation des performances                    ON PEUT EN RAJOUTER------------------------------------------------------
 
 Il manque :
 
@@ -99,9 +99,9 @@ Histogramme des résidus
 
 Ces éléments permettent de diagnostiquer le modèle.
 
-9. Tests robustes : baselines
+9. Tests robustes : baselines                   PAS A FAIRE------------------------------------------------------
 
-Il manque un modèle baseline simple :
+Il manque un modèle baseline simple :                   A FAIRE POURQUOI PAS------------------------------------------------------
 
 Mean regressor : toujours prédire la moyenne
 
@@ -111,7 +111,7 @@ Pour prouver que vos modèles font mieux qu’un modèle trivial.
 
 10. Industrialisation / pipeline final
 
-Il manque :
+Il manque :                     PAS A FAIRE------------------------------------------------------
 
 Un pipeline final exporté (pickle)
 
@@ -123,7 +123,7 @@ train.py
 
 predict.py
 
-11. Documentation et conclusion
+11. Documentation et conclusion                     FAIT------------------------------------------------------
 
 Vous faites beaucoup de code mais :
 
