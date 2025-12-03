@@ -38,7 +38,7 @@ Création de nouvelles métriques (e.g. "danceability per loudness")
 
 PCA ou autres méthodes de réduction de dimension
 
-4. Analyse des performances sur le train et sur le test                  A FAIRE ------------------------------------------------------
+4. Analyse des performances sur le train et sur le test                  FAIT ------------------------------------------------------
 
 Le projet montre les scores uniquement sur le test.
 Il manque :
@@ -101,7 +101,7 @@ Ces éléments permettent de diagnostiquer le modèle.
 
 9. Tests robustes : baselines                   PAS A FAIRE------------------------------------------------------
 
-Il manque un modèle baseline simple :                   A FAIRE POURQUOI PAS------------------------------------------------------
+Il manque un modèle baseline simple :                   FAIT------------------------------------------------------
 
 Mean regressor : toujours prédire la moyenne
 
